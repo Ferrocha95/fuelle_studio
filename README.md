@@ -1,3 +1,33 @@
+## Fuelle Studio
+
+Technical foundation for Fuelle Studio's official site. This repository currently contains architecture, design tokens, route shells, and reusable base components only; the immersive Home is intentionally not built yet.
+
+### Stack
+
+- Next.js App Router + TypeScript
+- Tailwind CSS
+- GSAP for the editorial motion system; CSS and React state for microinteractions
+
+### Local development
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000). Use `npm run lint` and `npm run build` to verify the project.
+
+### Structure
+
+- `src/app`: App Router routes for Home, Servicios, Proyectos, El estudio, and Contacto.
+- `src/components`: shared layout, UI primitives, and guarded logo-review/application components.
+- `src/lib/site-config.ts`: navigation and brand constants.
+- `src/lib/brand-assets.ts`: approved-logo reference status and the guarded light/dark application slots.
+- `src/app/globals.css`: color, type, accessibility, and reduced-motion tokens.
+
+The approved historical logo reference is a non-transparent JPEG, while `referencias/Diseño sin título.svg` is the approved SVG application asset with its supplied white canvas. The `/identidad` route documents both. Do not trace, redraw, or replace the mark with type.
+
+---
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
