@@ -93,10 +93,10 @@ export function HomeHeader() {
 
   return (
     <header className="relative z-30 border-b border-[color:rgb(201_183_167/0.65)]" ref={headerRef}>
-      <nav aria-label="Navegación principal" className="mx-auto flex max-w-[100rem] items-center justify-between px-5 py-4 sm:px-8 lg:px-12">
+      <nav aria-label="Navegación principal" className="mx-auto flex max-w-[90rem] items-center justify-between px-5 py-4 sm:px-8 lg:px-12">
         <a aria-label="Volver al inicio" href="#inicio"><BrandLogo surface="light" /></a>
-        <div className="hidden items-center gap-4 lg:gap-6 md:flex">{homeLinks.map((item) => <a className="text-xs font-medium transition-colors hover:text-[var(--color-orange)] lg:text-sm" href={item.href} key={item.href}>{item.label}</a>)}</div>
-        <button aria-controls="home-menu" aria-expanded={isMenuOpen} aria-label={isMenuOpen ? "Cerrar menú" : "Abrir menú"} className="relative grid h-10 w-10 place-items-center border border-[var(--color-charcoal)] md:hidden" onClick={() => setIsMenuOpen((open) => !open)} ref={menuButtonRef} type="button">
+        <div className="hidden items-center gap-4 lg:gap-6 lg:flex">{homeLinks.map((item) => <a className="text-xs font-medium transition-colors hover:text-[var(--color-orange)] lg:text-sm" href={item.href} key={item.href}>{item.label}</a>)}</div>
+        <button aria-controls="home-menu" aria-expanded={isMenuOpen} aria-label={isMenuOpen ? "Cerrar menú" : "Abrir menú"} className="relative grid h-10 w-10 place-items-center border border-[var(--color-charcoal)] lg:hidden" onClick={() => setIsMenuOpen((open) => !open)} ref={menuButtonRef} type="button">
           <span className="sr-only">Menú</span><span aria-hidden="true" className="relative block h-3 w-4"><span className={`absolute left-0 top-0 h-px w-full bg-current transition-transform ${isMenuOpen ? "translate-y-1.5 rotate-45" : ""}`} /><span className={`absolute bottom-0 left-0 h-px w-full bg-current transition-transform ${isMenuOpen ? "-translate-y-1.5 -rotate-45" : ""}`} /></span>
         </button>
       </nav>

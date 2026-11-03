@@ -94,8 +94,8 @@ export default function IdentityPage() {
               </article>
             </div>
             <div className="mt-8 flex flex-wrap gap-4">
-              <button className="bg-[var(--color-orange)] px-5 py-3 text-sm font-semibold text-[var(--color-on-orange)] transition-colors hover:bg-[var(--color-blue)] hover:text-white">Acción principal</button>
-              <button className="border border-[var(--color-charcoal)] px-5 py-3 text-sm font-semibold transition-colors hover:bg-[var(--color-charcoal)] hover:text-[var(--color-ivory)]">Acción secundaria</button>
+              <button className="button button--signal">Acción principal</button>
+              <button className="button button--outline">Acción secundaria</button>
               <span className="inline-flex items-center bg-[var(--color-blue)] px-4 py-2 text-xs font-semibold text-white">Acento ocasional</span>
             </div>
           </section>

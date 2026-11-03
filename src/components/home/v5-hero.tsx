@@ -23,6 +23,7 @@ export function V5Hero() {
   return (
     <section className="hero-v5" id="inicio">
       <div aria-hidden="true" className="hero-v5__grid" />
+      <div aria-hidden="true" className="hero-v5__atmosphere" />
       <Container className="hero-v5__container">
         <div className="hero-v5__masthead" data-hero-copy>
           <p>Estudio creativo independiente<br />México</p>
@@ -40,8 +41,8 @@ export function V5Hero() {
             <div className="hero-v5__bottom" data-hero-copy>
               <p>Estrategia, creatividad y tecnología para marcas que no nacieron para quedarse quietas.</p>
               <div className="flex flex-wrap gap-3">
-                <a className="button button--signal" href="#servicios">Impulsemos tu marca <span aria-hidden="true">↗</span></a>
-                <a className="hero-v5__text-link" href="#capacidades">Ver demostraciones <span aria-hidden="true">↓</span></a>
+                <a className="button button--signal" href="/servicios">Impulsemos tu marca <span aria-hidden="true">↗</span></a>
+                <a className="button button--glass hero-v5__text-link" href="#capacidades">Ver demostraciones <span aria-hidden="true">↓</span></a>
               </div>
             </div>
           </div>
@@ -49,6 +50,7 @@ export function V5Hero() {
           <div aria-label="Escultura digital translúcida interactiva" className="hero-v5__sculpture" data-hero-v5-object onPointerLeave={resetObjectTilt} onPointerMove={setObjectTilt} role="img">
             <div className="hero-v5__sculpture-inner">
               <div className="hero-v5__halo" />
+              <div className="hero-v5__orbit"><i /><b /></div>
               <div className="hero-v5__glass hero-v5__glass--primary"><i /><b /></div>
               <div className="hero-v5__glass hero-v5__glass--secondary" />
               <div className="hero-v5__signal" />

@@ -93,7 +93,7 @@ export function ServicesExperience() {
                 </dl>
                 <div className="service-detail__footer">
                   <p><span>Proceso general</span>{process.join(" · ")}</p>
-                  <Link href="/contacto">Solicitar un diagnóstico <span aria-hidden="true">↗</span></Link>
+                  <Link className="action-link action-link--ink" href="/contacto">Solicitar un diagnóstico <span aria-hidden="true">↗</span></Link>
                 </div>
               </li>
             ))}

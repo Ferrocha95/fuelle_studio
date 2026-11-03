@@ -50,7 +50,7 @@ export function StudioExperience() {
         <Container className="studio-process__container">
           <div><p>03 / Nuestra forma de trabajar</p><h2 id="studio-process-title">La claridad no le quita energía al proceso. Le da dirección.</h2></div>
           <ol>{process.map(([number, title, text]) => <li key={number}><span>{number}</span><div><h3>{title}</h3><p>{text}</p></div></li>)}</ol>
-          <Link className="studio-process__cta" href="/contacto">Hablemos de lo que necesita moverse <span aria-hidden="true">↗</span></Link>
+          <Link className="studio-process__cta action-link action-link--light" href="/contacto">Hablemos de lo que necesita moverse <span aria-hidden="true">↗</span></Link>
         </Container>
       </section>
     </main>
